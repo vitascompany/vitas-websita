@@ -1,369 +1,192 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="مستودع أدوية ڤيتاس - موزعون معتمدون للأدوية والمستلزمات الطبية والصيدلانية ومستحضرات التجميل في حلب، سورية" />
-  <meta name="keywords" content="ڤيتاس, مستودع أدوية, حلب, أدوية, مستلزمات طبية, صيدلية, VITAS Drug Store" />
-  <meta name="author" content="VITAS Drug Store" />
-  <title>مستودع أدوية ڤيتاس | VITAS Drug Store</title>
-
-  <!-- Favicon -->
-  <link rel="icon" type="image/jpeg" href="assets/logo-dark.jpg" />
-
-  <!-- Google Fonts - Arabic & Latin -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
-
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
-
-  <link rel="stylesheet" href="css/style.css" />
+    <meta charset="UTF-8">
+    <title>بروشور مستودع فيتاس للأدوية ومستحضرات التجميل</title>
+    <style>
+        body {
+            font-family: 'Tahoma', Arial, sans-serif;
+            background-color: #f4f7f6;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+        .brochure-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+        }
+        .header-info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid #e0e0e0;
+            padding-bottom: 15px;
+            margin-bottom: 20px;
+            font-size: 13px;
+            color: #555;
+        }
+        .header-info div span {
+            display: block;
+        }
+        .logo-area {
+            text-align: center;
+        }
+        .logo-area h2 {
+            margin: 5px 0 0;
+            color: #007782;
+            font-size: 18px;
+        }
+        .main-title {
+            text-align: center;
+            background: linear-gradient(135deg, #007782, #005660);
+            color: #ffffff;
+            padding: 12px;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 15px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .companies-bar {
+            background-color: #e6f2f4;
+            color: #005660;
+            padding: 8px;
+            text-align: center;
+            font-weight: bold;
+            font-size: 13px;
+            border-radius: 6px;
+            margin-bottom: 15px;
+            border: 1px solid #c2e0e5;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 14px;
+            background: #fff;
+        }
+        th, td {
+            padding: 10px 12px;
+            text-align: center;
+            border-bottom: 1px solid #eee;
+        }
+        th {
+            background-color: #007782;
+            color: white;
+            font-weight: bold;
+            font-size: 13px;
+        }
+        th:first-child { border-top-right-radius: 6px; }
+        th:last-child { border-top-left-radius: 6px; }
+        
+        tr:nth-child(even) {
+            background-color: #f9fbfc;
+        }
+        tr:hover {
+            background-color: #f1f7f8;
+        }
+        .highlight-date {
+            background-color: #ffebee;
+            color: #c62828;
+            font-weight: bold;
+            border-radius: 4px;
+            padding: 3px 6px;
+            font-size: 12px;
+        }
+        .text-right {
+            text-align: right;
+        }
+    </style>
 </head>
 <body>
-  <!-- ========== HEADER ========== -->
-  <header class="header" id="header">
-    <div class="container header-inner">
-      <a href="#home" class="logo">
-        <img src="assets/logo-dark.jpg" alt="VITAS Drug Store Logo" class="logo-img" />
-        <div class="logo-text">
-          <span class="logo-name">VITAS</span>
-          <span class="logo-sub">مستودع أدوية</span>
-        </div>
-      </a>
 
-      <nav class="nav" id="nav">
-        <ul class="nav-list">
-          <li><a href="#home" class="nav-link active">الرئيسية</a></li>
-          <li><a href="#about" class="nav-link">من نحن</a></li>
-          <li><a href="#services" class="nav-link">خدماتنا</a></li>
-          <li><a href="#why-us" class="nav-link">لماذا نحن</a></li>
-          <li><a href="#contact" class="nav-link">تواصل معنا</a></li>
-        </ul>
-      </nav>
-
-      <div class="header-actions">
-        <a href="https://wa.me/963940040430" class="btn btn-whatsapp" target="_blank" rel="noopener">
-          <i class="fab fa-whatsapp"></i>
-          <span>واتساب</span>
-        </a>
-        <button class="menu-toggle" id="menu-toggle" aria-label="فتح القائمة">
-          <span></span><span></span><span></span>
-        </button>
-      </div>
-    </div>
-  </header>
-
-  <!-- ========== HERO ========== -->
-  <section class="hero" id="home">
-    <div class="hero-bg"></div>
-    <div class="container hero-content">
-      <div class="hero-text">
-        <span class="hero-badge">موزعون معتمدون · حلب</span>
-        <h1>
-          مستودع أدوية <span class="highlight">ڤيتاس</span>
-        </h1>
-        <p class="hero-desc">
-          نوفر أفضل المنتجات الطبية والصيدلانية ومستحضرات التجميل بأعلى معايير الجودة.
-          شريككم الموثوق في توزيع الأدوية والمستلزمات الطبية في مدينة حلب.
-        </p>
-        <div class="hero-buttons">
-          <a href="#contact" class="btn btn-primary">
-            <i class="fas fa-phone-alt"></i>
-            تواصل معنا
-          </a>
-          <a href="#services" class="btn btn-outline">
-            <i class="fas fa-pills"></i>
-            خدماتنا
-          </a>
+<div class="brochure-container">
+    <!-- معلومات الترويسة العليا -->
+    <div class="header-info">
+        <div>
+            <span>سجل تجاري: 95812</span>
+            <span>0940040430</span>
+            <span>0940040431</span>
         </div>
-      </div>
-      <div class="hero-visual">
-        <div class="hero-logo-card">
-          <img src="assets/logo-dark.jpg" alt="VITAS Logo" />
+        <div class="logo-area">
+            <h2>ViTAS</h2>
+            <span style="font-size: 11px; color: #778;">DERMACOSMETICS</span>
         </div>
-      </div>
-    </div>
-    <div class="hero-wave">
-      <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
-        <path d="M0,64 C360,120 720,0 1080,64 C1260,96 1380,80 1440,64 L1440,120 L0,120 Z" fill="#ffffff"/>
-      </svg>
-    </div>
-  </section>
-
-  <!-- ========== ABOUT ========== -->
-  <section class="section about" id="about">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-tag">من نحن</span>
-        <h2>مستودع أدوية ڤيتاس</h2>
-        <p>شريككم الموثوق في توريد الأدوية والمستلزمات الطبية</p>
-      </div>
-
-      <div class="about-grid">
-        <div class="about-card">
-          <div class="about-icon">
-            <i class="fas fa-certificate"></i>
-          </div>
-          <h3>موزعون معتمدون</h3>
-          <p>نحن موزعون معتمدون للأدوية والمستلزمات الطبية والصيدلانية ومستحضرات التجميل.</p>
-        </div>
-        <div class="about-card">
-          <div class="about-icon">
-            <i class="fas fa-award"></i>
-          </div>
-          <h3>أعلى معايير الجودة</h3>
-          <p>نوفر أفضل المنتجات الطبية بأعلى معايير الجودة والسلامة لضمان رضا عملائنا.</p>
-        </div>
-        <div class="about-card">
-          <div class="about-icon">
-            <i class="fas fa-map-marker-alt"></i>
-          </div>
-          <h3>موقعنا في حلب</h3>
-          <p>نخدم مدينة حلب من مقرنا في حي سيف الدولة، مع تغطية واسعة للمنطقة.</p>
-        </div>
-      </div>
-
-      <div class="about-info-box">
-        <div class="info-item">
-          <i class="fas fa-building"></i>
-          <div>
-            <strong>السجل التجاري</strong>
-            <span>رقم 95812</span>
-          </div>
-        </div>
-        <div class="info-item">
-          <i class="fas fa-user-tie"></i>
-          <div>
-            <strong>بإدارة</strong>
-            <span>إبراهيم الحمد · زهير الحمد</span>
-          </div>
-        </div>
-        <div class="info-item">
-          <i class="fas fa-map"></i>
-          <div>
-            <strong>العنوان</strong>
+        <div style="text-align: left;">
+            <span>مستودع فيتاس للأدوية ومستحضرات التجميل</span>
             <span>حلب - سيف الدولة</span>
-          </div>
         </div>
-      </div>
     </div>
-  </section>
 
-  <!-- ========== SERVICES ========== -->
-  <section class="section services" id="services">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-tag">خدماتنا</span>
-        <h2>ما نقدمه لكم</h2>
-        <p>مجموعة شاملة من المنتجات الطبية والصيدلانية</p>
-      </div>
-
-      <div class="services-grid">
-        <div class="service-card">
-          <div class="service-icon">
-            <i class="fas fa-pills"></i>
-          </div>
-          <h3>الأدوية</h3>
-          <p>توريد وتوزيع مجموعة واسعة من الأدوية البشرية بأعلى معايير الجودة والتخزين الآمن.</p>
-        </div>
-        <div class="service-card">
-          <div class="service-icon">
-            <i class="fas fa-stethoscope"></i>
-          </div>
-          <h3>المستلزمات الطبية</h3>
-          <p>مستلزمات طبية متنوعة تلبي احتياجات العيادات والمشافي والصيدليات.</p>
-        </div>
-        <div class="service-card">
-          <div class="service-icon">
-            <i class="fas fa-flask"></i>
-          </div>
-          <h3>المنتجات الصيدلانية</h3>
-          <p>منتجات صيدلانية موثوقة من مصادر معتمدة لضمان الفعالية والسلامة.</p>
-        </div>
-        <div class="service-card">
-          <div class="service-icon">
-            <i class="fas fa-spa"></i>
-          </div>
-          <h3>مستحضرات التجميل</h3>
-          <p>مستحضرات تجميل وعناية شخصية عالية الجودة من علامات تجارية موثوقة.</p>
-        </div>
-      </div>
+    <!-- عنوان البروشور -->
+    <div class="main-title">
+        بروشور مستودع فيتاس للأدوية ومستحضرات التجميل
     </div>
-  </section>
 
-  <!-- ========== WHY US ========== -->
-  <section class="section why-us" id="why-us">
-    <div class="container">
-      <div class="section-header light">
-        <span class="section-tag">لماذا ڤيتاس؟</span>
-        <h2>نلتزم بالتميز والجودة</h2>
-        <p>نضع صحة عملائنا ورضاهم في مقدمة أولوياتنا</p>
-      </div>
-
-      <div class="why-grid">
-        <div class="why-item">
-          <div class="why-number">01</div>
-          <h3>جودة مضمونة</h3>
-          <p>نختار منتجاتنا بعناية فائقة من مصادر موثوقة ومعتمدة.</p>
-        </div>
-        <div class="why-item">
-          <div class="why-number">02</div>
-          <h3>تخزين آمن</h3>
-          <p>نلتزم بمعايير التخزين الصحيحة للحفاظ على فعالية المنتجات.</p>
-        </div>
-        <div class="why-item">
-          <div class="why-number">03</div>
-          <h3>خدمة سريعة</h3>
-          <p>نوفر استجابة سريعة ومرنة لتلبية طلبات الصيدليات والمؤسسات الطبية.</p>
-        </div>
-        <div class="why-item">
-          <div class="why-number">04</div>
-          <h3>فريق متخصص</h3>
-          <p>فريق إداري ذو خبرة يحرص على تقديم أفضل خدمة ممكنة.</p>
-        </div>
-      </div>
+    <!-- شريط الشركات -->
+    <div class="companies-bar">
+        ميديكو - بركات - أتانيا - ابن حيان - دلتا - الرازي - فارماسير - الفارس - السعد - كيمي
     </div>
-  </section>
 
-  <!-- ========== CONTACT ========== -->
-  <section class="section contact" id="contact">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-tag">تواصل معنا</span>
-        <h2>نحن هنا لخدمتكم</h2>
-        <p>تواصلوا معنا عبر أي من القنوات التالية</p>
-      </div>
+    <!-- جدول المنتجات -->
+    <table>
+        <thead>
+            <tr>
+                <th>الرقم</th>
+                <th class="text-right">اسم المادة</th>
+                <th>الكمية</th>
+                <th>العدد</th>
+                <th>الهدايا</th>
+                <th>ملاحظات</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td class="text-right">ازيترومايسين 500 ملغ حب</td>
+                <td>99</td>
+                <td>10</td>
+                <td>5</td>
+                <td>-</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td class="text-right">استوميد أقراص 20 قرص</td>
+                <td>48</td>
+                <td>0</td>
+                <td>0</td>
+                <td>-</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td class="text-right">امبروكسول حب</td>
+                <td>80</td>
+                <td>10</td>
+                <td>5</td>
+                <td><span class="highlight-date">2026/10</span></td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td class="text-right">امبروكسول شراب</td>
+                <td>80</td>
+                <td>10</td>
+                <td>6</td>
+                <td>-</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td class="text-right">املوديبين - 5 ملغ حب</td>
+                <td>65</td>
+                <td>10</td>
+                <td>1</td>
+                <td>-</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
 
-      <div class="contact-grid">
-        <div class="contact-info">
-          <div class="contact-card">
-            <div class="contact-icon location">
-              <i class="fas fa-map-marker-alt"></i>
-            </div>
-            <div>
-              <h4>العنوان</h4>
-              <p>حلب - سيف الدولة</p>
-            </div>
-          </div>
-
-          <div class="contact-card">
-            <div class="contact-icon email">
-              <i class="fas fa-envelope"></i>
-            </div>
-            <div>
-              <h4>البريد الإلكتروني</h4>
-              <a href="mailto:vitasmedaleppo@gmail.com">vitasmedaleppo@gmail.com</a>
-            </div>
-          </div>
-
-          <div class="contact-card">
-            <div class="contact-icon phone">
-              <i class="fas fa-phone-alt"></i>
-            </div>
-            <div>
-              <h4>إبراهيم الحمد</h4>
-              <a href="tel:+963940040430" dir="ltr">0940 040 430</a>
-              <a href="https://wa.me/963940040430" class="wa-link" target="_blank" rel="noopener">
-                <i class="fab fa-whatsapp"></i> واتساب
-              </a>
-            </div>
-          </div>
-
-          <div class="contact-card">
-            <div class="contact-icon phone">
-              <i class="fas fa-phone-alt"></i>
-            </div>
-            <div>
-              <h4>زهير الحمد</h4>
-              <a href="tel:+963940040431" dir="ltr">0940 040 431</a>
-              <a href="https://wa.me/963940040431" class="wa-link" target="_blank" rel="noopener">
-                <i class="fab fa-whatsapp"></i> واتساب
-              </a>
-            </div>
-          </div>
-
-          <div class="contact-card">
-            <div class="contact-icon reg">
-              <i class="fas fa-file-alt"></i>
-            </div>
-            <div>
-              <h4>السجل التجاري</h4>
-              <p>رقم 95812</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="contact-cta">
-          <div class="cta-box">
-            <img src="assets/logo-dark.jpg" alt="VITAS" class="cta-logo" />
-            <h3>هل تحتاجون إلى توريد أدوية أو مستلزمات طبية؟</h3>
-            <p>تواصلوا معنا الآن عبر واتساب للحصول على استشارة سريعة وعروض خاصة.</p>
-            <div class="cta-buttons">
-              <a href="https://wa.me/963940040430" class="btn btn-whatsapp-lg" target="_blank" rel="noopener">
-                <i class="fab fa-whatsapp"></i>
-                إبراهيم الحمد
-              </a>
-              <a href="https://wa.me/963940040431" class="btn btn-whatsapp-lg" target="_blank" rel="noopener">
-                <i class="fab fa-whatsapp"></i>
-                زهير الحمد
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ========== FOOTER ========== -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-top">
-        <div class="footer-brand">
-          <div class="footer-logo">
-            <img src="assets/logo-dark.jpg" alt="VITAS" />
-            <div>
-              <strong>VITAS</strong>
-              <span>مستودع أدوية</span>
-            </div>
-          </div>
-          <p>موزعون معتمدون للأدوية والمستلزمات الطبية والصيدلانية ومستحضرات التجميل في مدينة حلب.</p>
-        </div>
-
-        <div class="footer-links">
-          <h4>روابط سريعة</h4>
-          <ul>
-            <li><a href="#home">الرئيسية</a></li>
-            <li><a href="#about">من نحن</a></li>
-            <li><a href="#services">خدماتنا</a></li>
-            <li><a href="#contact">تواصل معنا</a></li>
-          </ul>
-        </div>
-
-        <div class="footer-contact">
-          <h4>تواصل معنا</h4>
-          <ul>
-            <li><i class="fas fa-map-marker-alt"></i> حلب - سيف الدولة</li>
-            <li><i class="fas fa-envelope"></i> vitasmedaleppo@gmail.com</li>
-            <li><i class="fas fa-phone"></i> <span dir="ltr">0940 040 430</span></li>
-            <li><i class="fas fa-phone"></i> <span dir="ltr">0940 040 431</span></li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="footer-bottom">
-        <p>© <span id="year"></span> VITAS Drug Store · مستودع أدوية ڤيتاس. جميع الحقوق محفوظة.</p>
-        <p class="reg-num">سجل تجاري رقم: 95812</p>
-      </div>
-    </div>
-  </footer>
-
-  <!-- Back to top -->
-  <button class="back-to-top" id="back-to-top" aria-label="العودة للأعلى">
-    <i class="fas fa-chevron-up"></i>
-  </button>
-
-  <script src="js/main.js"></script>
 </body>
 </html>
